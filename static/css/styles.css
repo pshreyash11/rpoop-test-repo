@@ -138,15 +138,26 @@ Color changes in some parts of
 the website, in dark theme 
 ==========*/
 
-.dark-theme .steps__bg,
-.dark-theme .questions{
+.dark-theme .steps__bg{
   background-color: var(--first-color-dark);
 }
 
-.dark-theme .product__circle,
+.dark-theme .input-div{
+  background-color:var(--first-color-dark);
+}
+
+.dark-theme .input-div h3,
+.dark-theme .drag-support,
+.dark-theme .drag-special,
+.dark-theme .drag-button{
+  color: #ffffff;
+
+}
+
+/* .dark-theme .product__circle,
 .dark-theme .footer__subscribe{
   background-color: var(--container-color);
-}
+} */
 
 .dark-theme .scroll-header{
   box-shadow: 0 1px 4px hsla(var(--hue), 4%, 4%, .3);
@@ -311,6 +322,7 @@ the website, in dark theme
 .home__img{
   width: 200px;
   justify-self: center;
+  margin-bottom:5rem;
 }
 
 .home__title{
@@ -366,7 +378,6 @@ the website, in dark theme
 .about__container{
   row-gap: 2rem;
 }
-
 .about__img{
   width: 280px;
   justify-self: center;

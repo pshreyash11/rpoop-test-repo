@@ -108,7 +108,8 @@ const sr = ScrollReveal({
 
 sr.reveal(`.home__data`)
 sr.reveal(`.home__img`, {delay: 500})
-sr.reveal(`.home__social`, {delay: 600})
-sr.reveal(`.about__img, .contact__box`,{origin: 'left'})
-sr.reveal(`.about__data, .contact__form`,{origin: 'right'})
+sr.reveal(`.about__img`,{origin: 'left'})
+sr.reveal(`.about__data`,{origin: 'right'})
 sr.reveal(`.steps__card`,{interval: 100})
+sr.reveal(`.input-div`,{interval: 100,origin:'left'})
+sr.reveal(`.generate-btn-div`,{delay:50,origin:'bottom'})

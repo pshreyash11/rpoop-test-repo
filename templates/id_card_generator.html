@@ -36,6 +36,9 @@
                     <li class="nav__item">
                         <a href="#steps" class="nav__link">Steps</a>
                     </li>
+                    <li class="nav__item">
+                        <a href="#input" class="nav__link">Generate</a>
+                    </li>
 
                 </ul>
 
@@ -60,7 +63,7 @@
         <section class="home" id="home">
             <div class="home__container container grid">
                 <!-- here one image will come -->
-                <!-- <img src="assets/img/home.png" alt="" class="home__img"> -->
+                <img src="../static/img/man_holding_ID_card-removebg-newcropped.png" alt="Hero Image" class="home__img">
 
                 <div class="home__data">
                     <h1 class="home__title">
@@ -70,7 +73,7 @@
                         Create your personalized ID card in just a few clicks !
                         With ID card Generator.
                     </p>
-                    <a href="#about" class="button button--flex">
+                    <a href="#steps" class="button button--flex">
                         Explore <i class="ri-arrow-right-down-line button__icon"></i>
                     </a>
                 </div>
@@ -82,7 +85,10 @@
         <section class="about section container" id="about">
             <div class="about__container grid">
                 <!-- here one image will come -->
-                <!-- <img src="assets/img/about.png" alt="" class="about__img"> -->
+                <div class="tech-images">
+                    <img src="../static/img/pillow_logo.png" alt="pillow-logo" class="about__img">
+                </div>
+
 
                 <div class="about__data">
                     <h2 class="section__title about__title">
@@ -154,7 +160,7 @@
 
         <!-- =======================INPUT================================== -->
 
-        <section class="input section container">
+        <section class="input section container" id="input">
             <form id="uploadForm" enctype="multipart/form-data" action="{{ url_for('id_card_generator') }}"
                 method="post">
                 <div class="input-div">
@@ -167,7 +173,7 @@
                             <input type="file" name="csvFile" id="csvFile" accept=".csv" required hidden />
                             <div class="file-message">
                                 <div class="default-message">
-                                    <span class="drag-header">Upload your CSV</span>
+                                    <span class="drag-header drag-special">Upload your CSV</span>
                                     <span class="drag-header"><span class="drag-button">Browse</span></span>
                                 </div>
                                 <div class="success-message">
@@ -189,7 +195,7 @@
                             <input type="file" name="templateImage" id="templateImage" accept=".png" required hidden />
                             <div class="file-message">
                                 <div class="default-message">
-                                    <span class="drag-header">Upload your Image file</span>
+                                    <span class="drag-header drag-special">Upload your Image file</span>
                                     <span class="drag-header"><span class="drag-button">Browse</span></span>
                                 </div>
                                 <div class="success-message">
